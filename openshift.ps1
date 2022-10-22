@@ -65,9 +65,9 @@ echo @"
 # To source this file from bash please 'source /c/env.sh'
     CLUSTER="$clusterName"
     RESOURCEGROUP="$clusterRG"
-    KUBE_PWD=$(az aro list-credentials -n `$CLUSTER -g `$RESOURCEGROUP --query kubeadminPassword -o tsv)
-    API_ENDPOINT=$(az aro show -n `$CLUSTER -g `$RESOURCEGROUP --query apiserverProfile.url -o tsv)
-    CONSOLE=$(az aro show -n `$CLUSTER -g `$RESOURCEGROUP --query consoleProfile.url -o tsv)
+    KUBE_PWD=`$(az aro list-credentials -n `$CLUSTER -g `$RESOURCEGROUP --query kubeadminPassword -o tsv)
+    API_ENDPOINT=`$(az aro show -n `$CLUSTER -g `$RESOURCEGROUP --query apiserverProfile.url -o tsv)
+    CONSOLE=`$(az aro show -n `$CLUSTER -g `$RESOURCEGROUP --query consoleProfile.url -o tsv)
 
 function aro_password()
 {

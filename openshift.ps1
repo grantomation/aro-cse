@@ -87,3 +87,4 @@ function aro_login ()
 }
 "@ > c:\env.sh
 
+dos2unix.exe /c/env.sh

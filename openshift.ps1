@@ -30,6 +30,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 choco install firefox -y
 choco install vscode -y
 choco install git -y
+choco install kubernetes-helm -y
 
 # Create a powershell env file so that once the AZ CLI is logged in then it is easy to log in to OpenShift
 echo @"
